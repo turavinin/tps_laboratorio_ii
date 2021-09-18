@@ -56,7 +56,77 @@ namespace Entidades
                 }
             }
             return output;
-        } 
+        }
+
+
+        public string BinarioDecimal(string binario)
+        {
+            string output = "Valor inválido";
+            int numDecimal;
+
+            bool esBinario = this.EsBinario(binario);
+
+            if (esBinario)
+            {
+                numDecimal = Convert.ToInt32(binario, 10);
+                output = numDecimal.ToString();
+            }
+
+            return output;
+        }
+
+        public string DecimalBinario(double numero)
+        {
+            string output = "Valor Inválido";
+            int numeroEntero;
+
+            bool esValido = int.TryParse(Math.Round(numero).ToString(), out numeroEntero);
+
+            if (esValido)
+            {
+                if (numeroEntero < 0)
+                    numeroEntero *= -1;
+
+                output = Convert.ToString(numeroEntero, 2);
+            }
+
+            return output;
+        }
+
+        public string DecimalBinario(string strNumero)
+        {
+            string output = "Valor Inválido";
+            double numero;
+            bool esValido = double.TryParse(strNumero, out numero);
+            if (esValido)
+            {
+                output = this.DecimalBinario(numero);
+            }
+
+            return output;
+        }
+        #endregion
+
+        #region Sobrecarga Operadores
+        public static double operator +(Operando n1, Operando n2)
+        {
+            return n1.numero + n2.numero;
+        }
+
+        public static double operator -(Operando n1, Operando n2)
+        {
+            return n1.numero - n2.numero;
+        }
+
+        public static double operator /(Operando n1, Operando n2)
+        {
+            return n1.numero / n2.numero;
+        }
+
+        public static double operator *(Operando n1, Operando n2)
+        {
+            return n1.numero * n2.numero;
+        }
         #endregion
     }
 }
