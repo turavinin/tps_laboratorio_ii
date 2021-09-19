@@ -31,6 +31,11 @@ namespace Entidades
         #endregion
 
         #region Metodos
+        /// <summary>
+        /// Valida el operanod (número) ingresado. 
+        /// </summary>
+        /// <param name="strNumero">Número en tipo string.</param>
+        /// <returns>En caso número, retorna el número en tipo double. Caso contrario, retorna 0 en tipo double.</returns>
         private double ValidarOperando(string strNumero)
         {
             double output = 0;
@@ -44,6 +49,11 @@ namespace Entidades
             return output;
         }
 
+        /// <summary>
+        /// Verifica si la cadena de texto pasada es un número binario.
+        /// </summary>
+        /// <param name="binario">Cadena de texto a analizar</param>
+        /// <returns>True, si es binario. False, si no es binario.</returns>
         private bool EsBinario(string binario)
         {
             bool output = true;
@@ -58,7 +68,11 @@ namespace Entidades
             return output;
         }
 
-
+        /// <summary>
+        /// Realiza la conversión de binario a decimal.
+        /// </summary>
+        /// <param name="binario">Binario a convertir.</param>
+        /// <returns>Retorna el número decimal en string</returns>
         public string BinarioDecimal(string binario)
         {
             string output = "Valor Inválido";
@@ -75,12 +89,15 @@ namespace Entidades
             return output;
         }
 
+        /// <summary>
+        /// Realiza la conversión de decimal a binario.
+        /// </summary>
+        /// <param name="numero">Decimal a convertir en tipo double.</param>
+        /// <returns>De ser un número valido, retorna el binario en formato string. Caso contrario retorna 0 en formato string.</returns>
         public string DecimalBinario(double numero)
         {
             string output = "Valor Inválido";
             int numeroEntero = 0;
-            string numBin = string.Empty;
-            int resto;
 
             bool esValido = int.TryParse(Math.Round(numero).ToString(), out numeroEntero);
 
@@ -95,6 +112,11 @@ namespace Entidades
             return output;
         }
 
+        /// <summary>
+        /// Realiza la conversión de decimal a binario.
+        /// </summary>
+        /// <param name="strNumero">Decimal a convertir en tipo string.</param>
+        /// <returns>De ser un número valido, retorna el binario en formato string. Caso contrario retorna 0 en formato string.</returns>
         public string DecimalBinario(string strNumero)
         {
             string output = "Valor Inválido";

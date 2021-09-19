@@ -20,6 +20,9 @@ namespace MiCalculadora
         }
 
         #region Metodos
+        /// <summary>
+        /// Limpia los campos de la calculadora. 
+        /// </summary>
         private void Limpiar()
         {
             this.txtNumero1.Text = string.Empty;
@@ -29,6 +32,13 @@ namespace MiCalculadora
             this.lstOperaciones.Items.Clear();
         }
 
+        /// <summary>
+        /// Realiza la operación entre los dos números.
+        /// </summary>
+        /// <param name="numero1"></param>
+        /// <param name="numero2"></param>
+        /// <param name="operador"></param>
+        /// <returns>Retorna el resultado en formato double.</returns>
         private static double Operar(string numero1, string numero2, string operador)
         {
             double output = 0;
@@ -39,6 +49,7 @@ namespace MiCalculadora
         }
         #endregion
 
+        #region Eventos
         private void btnLimpiar_Click(object sender, EventArgs e)
         {
             this.Limpiar();
@@ -47,7 +58,7 @@ namespace MiCalculadora
         private void FormCalculadora_FormClosing(object sender, FormClosingEventArgs e)
         {
             DialogResult result = MessageBox.Show("¿Seguro que quiere salir?", "Salir", MessageBoxButtons.YesNo);
-            if(result == DialogResult.Yes)
+            if (result == DialogResult.Yes)
             {
                 Environment.Exit(0);
             }
@@ -81,7 +92,7 @@ namespace MiCalculadora
 
             if (string.IsNullOrEmpty(operador))
                 operador = "+";
-                
+
             string operacion = $"{num1} {operador} {num2} = {result}";
 
             this.lstOperaciones.Items.Add(operacion);
@@ -102,6 +113,7 @@ namespace MiCalculadora
             Operando num1 = new Operando();
             string resultadoDecimal = num1.BinarioDecimal(resultadoBinario);
             this.lblResultado.Text = resultadoDecimal;
-        }
+        } 
+        #endregion
     }
 }
