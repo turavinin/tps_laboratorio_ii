@@ -61,14 +61,14 @@ namespace Entidades
 
         public string BinarioDecimal(string binario)
         {
-            string output = "Valor inválido";
+            string output = "Valor Inválido";
             int numDecimal;
 
             bool esBinario = this.EsBinario(binario);
 
             if (esBinario)
             {
-                numDecimal = Convert.ToInt32(binario, 10);
+                numDecimal = Convert.ToInt32(binario, 2);
                 output = numDecimal.ToString();
             }
 
@@ -78,7 +78,9 @@ namespace Entidades
         public string DecimalBinario(double numero)
         {
             string output = "Valor Inválido";
-            int numeroEntero;
+            int numeroEntero = 0;
+            string numBin = string.Empty;
+            int resto;
 
             bool esValido = int.TryParse(Math.Round(numero).ToString(), out numeroEntero);
 
@@ -120,7 +122,16 @@ namespace Entidades
 
         public static double operator /(Operando n1, Operando n2)
         {
-            return n1.numero / n2.numero;
+            double output;
+            if(n2.numero == 0)
+            {
+                output = double.MinValue;
+            }
+            else
+            {
+                output = n1.numero / n2.numero;
+            }
+            return output;
         }
 
         public static double operator *(Operando n1, Operando n2)
