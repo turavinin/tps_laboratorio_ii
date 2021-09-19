@@ -68,14 +68,19 @@ namespace MiCalculadora
 
         private void btnOperar_Click(object sender, EventArgs e)
         {
-            string num1 = this.txtNumero1.Text;
-            string num2 = this.txtNumero2.Text;
+            //string num1 = this.txtNumero1.Text;            
+            //string num2 = this.txtNumero2.Text;
+            string num1 = double.TryParse(this.txtNumero1.Text, out _) ? this.txtNumero1.Text : "0";
+            string num2 = double.TryParse(this.txtNumero2.Text, out _) ? this.txtNumero1.Text : "0";
             string operador = this.cmbOperador.Text;
 
             double result = FormCalculadora.Operar(num1, num2, operador);
 
             if (num2.Contains('-'))
                 num2 = $"({num2})";
+
+            if (string.IsNullOrEmpty(operador))
+                operador = "+";
                 
             string operacion = $"{num1} {operador} {num2} = {result}";
 
