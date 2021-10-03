@@ -11,23 +11,6 @@ namespace Entidades
     /// </summary>
     public abstract class Vehiculo
     {
-        public enum EMarca
-        {
-            Chevrolet, 
-            Ford, 
-            Renault, 
-            Toyota, 
-            BMW, 
-            Honda, 
-            HarleyDavidson
-        }
-        public enum ETamanio
-        {
-            Chico, 
-            Mediano, 
-            Grande
-        }
-
         private EMarca marca;
         private string chasis;
         private ConsoleColor color;
@@ -37,7 +20,29 @@ namespace Entidades
         /// </summary>
         protected abstract ETamanio Tamanio { get; }
 
+        public enum EMarca
+        {
+            Chevrolet,
+            Ford,
+            Renault,
+            Toyota,
+            BMW,
+            Honda,
+            HarleyDavidson
+        }
+        public enum ETamanio
+        {
+            Chico,
+            Mediano,
+            Grande
+        }
 
+        /// <summary>
+        /// Constructor de Vehiculo.
+        /// </summary>
+        /// <param name="marca"></param>
+        /// <param name="chasis"></param>
+        /// <param name="color"></param>
         public Vehiculo(string chasis, EMarca marca, ConsoleColor color)
         {
             this.marca = marca;
@@ -76,6 +81,7 @@ namespace Entidades
         {
             return (v1.chasis == v2.chasis);
         }
+
         /// <summary>
         /// Dos vehiculos son distintos si su chasis es distinto
         /// </summary>

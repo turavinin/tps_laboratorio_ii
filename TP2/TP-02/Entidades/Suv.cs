@@ -19,10 +19,20 @@ namespace Entidades
             }
         }
 
+        /// <summary>
+        /// Constructor de Suv.
+        /// </summary>
+        /// <param name="marca"></param>
+        /// <param name="chasis"></param>
+        /// <param name="color"></param>
         public Suv(EMarca marca, string chasis, ConsoleColor color) : base(chasis, marca, color)
         {
         }
 
+        /// <summary>
+        /// Sobrecarga del método base. Muestra todos los datos del SUV. 
+        /// </summary>
+        /// <returns>Datos del SUV</returns>
         public override sealed string Mostrar()
         {
             StringBuilder sb = new StringBuilder();

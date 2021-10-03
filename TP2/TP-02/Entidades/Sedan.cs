@@ -29,7 +29,13 @@ namespace Entidades
             CincoPuertas 
         }
 
-
+        /// <summary>
+        /// Constructor de Sedan.
+        /// </summary>
+        /// <param name="marca"></param>
+        /// <param name="chasis"></param>
+        /// <param name="color"></param>
+        /// <param name="tipo"></param>
         public Sedan(EMarca marca, string chasis, ConsoleColor color, ETipo tipo) : base(chasis, marca, color)
         {
             this.tipo = tipo;
@@ -45,7 +51,10 @@ namespace Entidades
         {
         }
 
-
+        /// <summary>
+        /// Sobrecarga del método base. Muestra todos los datos del Sedan. 
+        /// </summary>
+        /// <returns>Datos del Sedan</returns>
         public override sealed string Mostrar()
         {
             StringBuilder sb = new StringBuilder();

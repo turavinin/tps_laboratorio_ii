@@ -20,10 +20,20 @@ namespace Entidades
             }
         }
 
+        /// <summary>
+        /// Constructor de Ciclomotor.
+        /// </summary>
+        /// <param name="marca"></param>
+        /// <param name="chasis"></param>
+        /// <param name="color"></param>
         public Ciclomotor(EMarca marca, string chasis, ConsoleColor color) : base(chasis, marca, color)
         {
         }
 
+        /// <summary>
+        /// Sobrecarga del método base. Muestra todos los datos del Ciclomotor. 
+        /// </summary>
+        /// <returns>Datos del Ciclomotor</returns>
         public override sealed string Mostrar()
         {
             StringBuilder sb = new StringBuilder();

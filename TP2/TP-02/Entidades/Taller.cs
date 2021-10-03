@@ -23,11 +23,18 @@ namespace Entidades
         }
 
         #region "Constructores"
+        /// <summary>
+        /// Constructor de Taller. Solo inicializa la lista de vehiculos.
+        /// </summary>
         private Taller()
         {
             this.vehiculos = new List<Vehiculo>();
         }
 
+        /// <summary>
+        /// Constructor de Taller. Establece el espacio disponible.
+        /// </summary>
+        /// <param name="espacioDisponible"></param>
         public Taller(int espacioDisponible) : this()
         {
             this.espacioDisponible = espacioDisponible;
@@ -46,13 +53,12 @@ namespace Entidades
         #endregion
 
         #region "Métodos"
-
         /// <summary>
         /// Expone los datos del elemento y su lista (incluidas sus herencias)
         /// SOLO del tipo requerido
         /// </summary>
         /// <param name="taller">Elemento a exponer</param>
-        /// <param name="ETipo">Tipos de ítems de la lista a mostrar</param>
+        /// <param name="tipo">Tipos de ítems de la lista a mostrar</param>
         /// <returns></returns>
         public static string Listar(Taller taller, ETipo tipo)
         {
@@ -107,6 +113,7 @@ namespace Entidades
             }
             return taller;
         }
+
         /// <summary>
         /// Quitará un elemento de la lista
         /// </summary>
