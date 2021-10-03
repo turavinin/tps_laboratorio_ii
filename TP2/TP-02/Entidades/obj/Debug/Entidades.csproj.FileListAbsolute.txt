@@ -11,3 +11,9 @@ D:\VisualStudio\Federico Dávila\TP-02\Entidades\bin\Debug\Entidades.pdb
 D:\Federico\VB .Net\Visual C#\utn\TPs\2018\TP-02\Entidades\obj\Debug\Entidades.csprojResolveAssemblyReference.cache
 D:\Federico\VB .Net\Visual C#\utn\TPs\2018\TP-02\Entidades\obj\Debug\Entidades.dll
 D:\Federico\VB .Net\Visual C#\utn\TPs\2018\TP-02\Entidades\obj\Debug\Entidades.pdb
+D:\Docs\ANTON\03 UTN\UTN - 2° CUATRIMESTRE\PROGRRAMACION-2\TRABAJOS-PRACTICOS\TP2\TP-02\Entidades\obj\Debug\Entidades.csproj.AssemblyReference.cache
+D:\Docs\ANTON\03 UTN\UTN - 2° CUATRIMESTRE\PROGRRAMACION-2\TRABAJOS-PRACTICOS\TP2\TP-02\Entidades\obj\Debug\Entidades.csproj.CoreCompileInputs.cache
+D:\Docs\ANTON\03 UTN\UTN - 2° CUATRIMESTRE\PROGRRAMACION-2\TRABAJOS-PRACTICOS\TP2\TP-02\Entidades\obj\Debug\Entidades.dll
+D:\Docs\ANTON\03 UTN\UTN - 2° CUATRIMESTRE\PROGRRAMACION-2\TRABAJOS-PRACTICOS\TP2\TP-02\Entidades\obj\Debug\Entidades.pdb
+D:\Docs\ANTON\03 UTN\UTN - 2° CUATRIMESTRE\PROGRRAMACION-2\TRABAJOS-PRACTICOS\TP2\TP-02\Entidades\bin\Debug\Entidades.dll
+D:\Docs\ANTON\03 UTN\UTN - 2° CUATRIMESTRE\PROGRRAMACION-2\TRABAJOS-PRACTICOS\TP2\TP-02\Entidades\bin\Debug\Entidades.pdb

@@ -6,21 +6,21 @@ using System.Threading.Tasks;
 
 namespace Entidades
 {
-    public class Suv
+    public class Suv : Vehiculo
     {
-        public Suv(EMarca marca, string chasis, ConsoleColor color)
-            : base(chasis, marca, color)
-        {
-        }
         /// <summary>
         /// SUV son 'Grande'
         /// </summary>
-        protected override short Tamanio
+        protected override ETamanio Tamanio
         {
             get
             {
-                return 0;
+                return ETamanio.Grande;
             }
+        }
+
+        public Suv(EMarca marca, string chasis, ConsoleColor color) : base(chasis, marca, color)
+        {
         }
 
         public override sealed string Mostrar()
@@ -28,12 +28,11 @@ namespace Entidades
             StringBuilder sb = new StringBuilder();
 
             sb.AppendLine("SUV");
-            sb.AppendLine(base);
-            sb.AppendLine("TAMAÑO : {0}", this.Tamanio);
-            sb.AppendLine("");
+            sb.AppendLine(base.Mostrar());
+            sb.AppendLine($"TAMAÑO : {this.Tamanio}");
             sb.AppendLine("---------------------");
 
-            return sb;
+            return sb.ToString();
         }
     }
 }

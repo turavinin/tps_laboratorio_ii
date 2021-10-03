@@ -8,10 +8,32 @@ using System.Drawing;
 
 namespace Entidades
 {
-    class Sedan : Vehiculo
+    public class Sedan : Vehiculo
     {
-        public enum ETipo { CuatroPuertas, CincoPuertas }
-        ETipo tipo;
+        private ETipo tipo;
+
+        /// <summary>
+        /// Sedan son 'Mediano'
+        /// </summary>
+        protected override ETamanio Tamanio
+        {
+            get
+            {
+                return ETamanio.Mediano;
+            }
+        }
+
+        public enum ETipo 
+        { 
+            CuatroPuertas, 
+            CincoPuertas 
+        }
+
+
+        public Sedan(EMarca marca, string chasis, ConsoleColor color, ETipo tipo) : base(chasis, marca, color)
+        {
+            this.tipo = tipo;
+        }
 
         /// <summary>
         /// Por defecto, TIPO será CuatroPuertas
@@ -19,35 +41,22 @@ namespace Entidades
         /// <param name="marca"></param>
         /// <param name="chasis"></param>
         /// <param name="color"></param>
-        public Sedan(EMarca marca, string chasis, ConsoleColor color)
-            : base(chasis, marca, color)
+        public Sedan(EMarca marca, string chasis, ConsoleColor color) : this(marca, chasis, color, ETipo.CuatroPuertas)
         {
-            tipo = ETipo.CuatroPuertas;
         }
 
-        /// <summary>
-        /// Sedan son 'Mediano'
-        /// </summary>
-        protected override short Tamanio
-        {
-            get
-            {
-                return this.Tamanio;
-            }
-        }
 
         public override sealed string Mostrar()
         {
             StringBuilder sb = new StringBuilder();
 
             sb.AppendLine("SEDAN");
-            sb.AppendLine(this);
-            sb.AppendLine("TAMAÑO : {0}", this.Tamanio);
-            sb.AppendLine("TIPO : " + this.tipo);
-            sb.AppendLine("");
+            sb.AppendLine(base.Mostrar());
+            sb.AppendLine($"TAMAÑO : {this.Tamanio}");
+            sb.AppendLine($"TIPO : {this.tipo}");
             sb.AppendLine("---------------------");
 
-            return sb;
+            return sb.ToString();
         }
     }
 }
