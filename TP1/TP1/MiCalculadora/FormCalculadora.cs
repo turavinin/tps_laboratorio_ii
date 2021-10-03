@@ -70,17 +70,16 @@ namespace MiCalculadora
 
         private void btnCerrar_Click(object sender, EventArgs e)
         {
-            DialogResult result = MessageBox.Show("¿Seguro que quiere salir?", "Salir", MessageBoxButtons.YesNo);
-            if (result == DialogResult.Yes)
-            {
-                Environment.Exit(0);
-            }
+            this.Close();
+            //DialogResult result = MessageBox.Show("¿Seguro que quiere salir?", "Salir", MessageBoxButtons.YesNo);
+            //if (result == DialogResult.Yes)
+            //{
+            //    Environment.Exit(0);
+            //}
         }
 
         private void btnOperar_Click(object sender, EventArgs e)
         {
-            //string num1 = this.txtNumero1.Text;            
-            //string num2 = this.txtNumero2.Text;
             string num1 = double.TryParse(this.txtNumero1.Text, out _) ? this.txtNumero1.Text : "0";
             string num2 = double.TryParse(this.txtNumero2.Text, out _) ? this.txtNumero1.Text : "0";
             string operador = this.cmbOperador.Text;

@@ -18,11 +18,24 @@ namespace Entidades
         }
 
         #region Constructores
-        public Operando() : this("0")
-        { }
+        //public Operando()
+        //{ }
 
-        public Operando(double numero) : this(numero.ToString())
-        { }
+        //public Operando(double numero) : this(numero.ToString())
+        //{ }
+
+        //public Operando(string strNumero)
+        //{
+        //    this.Numero = strNumero;
+        //}
+        public Operando()
+        {
+        }
+
+        public Operando(double numero)
+        {
+            this.numero = numero;
+        }
 
         public Operando(string strNumero)
         {
