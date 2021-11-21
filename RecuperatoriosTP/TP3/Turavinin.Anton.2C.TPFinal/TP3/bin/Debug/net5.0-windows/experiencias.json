@@ -1,0 +1,14 @@
+[
+	{
+		"Id" : 1,
+		"TipoExperiencia" : "Junior"
+	},
+	{
+		"Id" : 2,
+		"TipoExperiencia" : "Semi-Senior"
+	},
+	{
+		"Id" : 3,
+		"TipoExperiencia" : "Senior"
+	}
+]
