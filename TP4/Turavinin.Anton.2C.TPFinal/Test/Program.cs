@@ -19,7 +19,7 @@ namespace Test
             _manager.Personas.Add(new Persona(2, "Julia", 21, "Mujer Cis", 2, 2, 30000));
 
             // Prueba encontrar registro
-            Persona personaEncontrada = _manager.EncontrarRegistro<Persona>(1);
+            Persona personaEncontrada = _manager.EncontrarRegistroLista<Persona>(1);
             Console.WriteLine($"El nombre de la persona encontrada debe ser Andres, y es: {personaEncontrada.Nombre}");
             Console.WriteLine();
 
