@@ -31,6 +31,12 @@ namespace Entidades
             estadisticaPuestos = new EstadisticasPuestos();
         }
 
+        /// <summary>
+        /// Importa y deserealiza archivo.
+        /// </summary>
+        /// <typeparam name="T"></typeparam>
+        /// <param name="ruta"></param>
+        /// <returns>Retorna la lista de entidades</returns>
         public List<T> CargarEntidad<T>(string ruta) where T : class
         {
             try
@@ -44,6 +50,12 @@ namespace Entidades
             }
         }
 
+        /// <summary>
+        /// Serealiza y guarda archivo.
+        /// </summary>
+        /// <typeparam name="T"></typeparam>
+        /// <param name="obj"></param>
+        /// <param name="ruta"></param>
         public void GuardarEntidad<T>(List<T> obj, string ruta) where T : class
         {
             try
@@ -58,6 +70,12 @@ namespace Entidades
 
         }
 
+        /// <summary>
+        /// Elimina registro de la lista.
+        /// </summary>
+        /// <typeparam name="T"></typeparam>
+        /// <param name="obj"></param>
+        /// <returns>Retorna true si se eliminó la entidad.</returns>
         public bool EliminarRegistro<T>(T obj) where T : class
         {
             if (obj.GetType() == typeof(Persona))
@@ -75,6 +93,12 @@ namespace Entidades
             return false;
         }
 
+        /// <summary>
+        /// Busca entidad en la lista por su id.
+        /// </summary>
+        /// <typeparam name="T"></typeparam>
+        /// <param name="id"></param>
+        /// <returns>Retorna la entidad</returns>
         public T EncontrarRegistro<T>(string id) where T : class
         {
             if (typeof(T) == typeof(Persona))
@@ -92,11 +116,22 @@ namespace Entidades
             return null;
         }
 
+        /// <summary>
+        /// Busca entidad en la lista por su id.
+        /// </summary>
+        /// <typeparam name="T"></typeparam>
+        /// <param name="id"></param>
+        /// <returns>Retorna la entidad</returns>
         public T EncontrarRegistro<T>(int id) where T : class
         {
             return this.EncontrarRegistro<T>(id.ToString());
         }
 
+        /// <summary>
+        /// Obtiene el siguiente Id de entidades. 
+        /// </summary>
+        /// <typeparam name="T"></typeparam>
+        /// <returns>Retorna el Id</returns>
         public int ObtenerSiguienteId<T>() where T : class
         {
             if (typeof(T) == typeof(Persona))
@@ -114,6 +149,12 @@ namespace Entidades
             return 0;
         }
 
+        /// <summary>
+        /// Obtiene el Id por nombre / descripcion.
+        /// </summary>
+        /// <typeparam name="T"></typeparam>
+        /// <param name="nombre"></param>
+        /// <returns>Retorna el id/returns>
         public int GetIdByNombre<T>(string nombre) where T : class
         {
             if (typeof(T) == typeof(Persona))
@@ -131,6 +172,9 @@ namespace Entidades
             return 0;
         }
 
+        /// <summary>
+        /// Método encargado de calcular la información del perfil de personas. 
+        /// </summary>
         public void CalcularPerfilPersonas()
         {
             this.perfilPersonas.TotalPersonas = personas.Count;
@@ -149,6 +193,9 @@ namespace Entidades
             this.PerfilPersonas.CalcularPorcentajes();
         }
 
+        /// <summary>
+        /// Método encargado de calcular la estadística de puestos.
+        /// </summary>
         public void EstablecerEstadisticasPuestos()
         {
             this.estadisticaPuestos.TotalPuestos = puestos.Count;

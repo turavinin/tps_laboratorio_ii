@@ -73,7 +73,9 @@ namespace Entidades
         public int TotalMasDe50 { get => totalMasDe50; set => totalMasDe50 = value; }
         public int PorcentajeMasDe50 { get => porcentajeMasDe50; private set => porcentajeMasDe50 = value; }
 
-
+        /// <summary>
+        /// Método calcula los porcentajes. 
+        /// </summary>
         public void CalcularPorcentajes()
         {
             this.PorcentajeHombresCis = (this.TotalHombresCis * 100) / this.TotalPersonas;
