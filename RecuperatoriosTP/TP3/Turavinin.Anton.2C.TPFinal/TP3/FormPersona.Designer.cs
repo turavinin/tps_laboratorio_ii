@@ -30,10 +30,6 @@ namespace TP3
         private void InitializeComponent()
         {
             this.dgvPersonas = new System.Windows.Forms.DataGridView();
-            this.lblListaPersonas = new System.Windows.Forms.Label();
-            this.btnAgregarPersona = new System.Windows.Forms.Button();
-            this.btnEliminarPersona = new System.Windows.Forms.Button();
-            this.btnEditarPersona = new System.Windows.Forms.Button();
             this.Id = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Edad = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -41,6 +37,10 @@ namespace TP3
             this.Puesto = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Experiencia = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Salario = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.lblListaPersonas = new System.Windows.Forms.Label();
+            this.btnAgregarPersona = new System.Windows.Forms.Button();
+            this.btnEliminarPersona = new System.Windows.Forms.Button();
+            this.btnEditarPersona = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPersonas)).BeginInit();
             this.SuspendLayout();
             // 
@@ -67,46 +67,6 @@ namespace TP3
             this.dgvPersonas.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvPersonas.Size = new System.Drawing.Size(1087, 316);
             this.dgvPersonas.TabIndex = 0;
-            // 
-            // lblListaPersonas
-            // 
-            this.lblListaPersonas.AutoSize = true;
-            this.lblListaPersonas.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblListaPersonas.Location = new System.Drawing.Point(22, 24);
-            this.lblListaPersonas.Name = "lblListaPersonas";
-            this.lblListaPersonas.Size = new System.Drawing.Size(232, 31);
-            this.lblListaPersonas.TabIndex = 1;
-            this.lblListaPersonas.Text = "LISTA DE PERSONAS";
-            // 
-            // btnAgregarPersona
-            // 
-            this.btnAgregarPersona.Location = new System.Drawing.Point(22, 380);
-            this.btnAgregarPersona.Name = "btnAgregarPersona";
-            this.btnAgregarPersona.Size = new System.Drawing.Size(303, 29);
-            this.btnAgregarPersona.TabIndex = 2;
-            this.btnAgregarPersona.Text = "AGREGAR PERSONA";
-            this.btnAgregarPersona.UseVisualStyleBackColor = true;
-            this.btnAgregarPersona.Click += new System.EventHandler(this.btnAgregarPersona_Click);
-            // 
-            // btnEliminarPersona
-            // 
-            this.btnEliminarPersona.Location = new System.Drawing.Point(806, 380);
-            this.btnEliminarPersona.Name = "btnEliminarPersona";
-            this.btnEliminarPersona.Size = new System.Drawing.Size(303, 29);
-            this.btnEliminarPersona.TabIndex = 3;
-            this.btnEliminarPersona.Text = "ELIMINAR PERSONA";
-            this.btnEliminarPersona.UseVisualStyleBackColor = true;
-            this.btnEliminarPersona.Click += new System.EventHandler(this.btnEliminarPersona_Click);
-            // 
-            // btnEditarPersona
-            // 
-            this.btnEditarPersona.Location = new System.Drawing.Point(413, 380);
-            this.btnEditarPersona.Name = "btnEditarPersona";
-            this.btnEditarPersona.Size = new System.Drawing.Size(303, 29);
-            this.btnEditarPersona.TabIndex = 4;
-            this.btnEditarPersona.Text = "EDITAR PERSONA";
-            this.btnEditarPersona.UseVisualStyleBackColor = true;
-            this.btnEditarPersona.Click += new System.EventHandler(this.btnEditarPersona_Click);
             // 
             // Id
             // 
@@ -165,6 +125,46 @@ namespace TP3
             this.Salario.Name = "Salario";
             this.Salario.ReadOnly = true;
             // 
+            // lblListaPersonas
+            // 
+            this.lblListaPersonas.AutoSize = true;
+            this.lblListaPersonas.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblListaPersonas.Location = new System.Drawing.Point(22, 24);
+            this.lblListaPersonas.Name = "lblListaPersonas";
+            this.lblListaPersonas.Size = new System.Drawing.Size(232, 31);
+            this.lblListaPersonas.TabIndex = 1;
+            this.lblListaPersonas.Text = "LISTA DE PERSONAS";
+            // 
+            // btnAgregarPersona
+            // 
+            this.btnAgregarPersona.Location = new System.Drawing.Point(22, 380);
+            this.btnAgregarPersona.Name = "btnAgregarPersona";
+            this.btnAgregarPersona.Size = new System.Drawing.Size(303, 29);
+            this.btnAgregarPersona.TabIndex = 2;
+            this.btnAgregarPersona.Text = "AGREGAR PERSONA";
+            this.btnAgregarPersona.UseVisualStyleBackColor = true;
+            this.btnAgregarPersona.Click += new System.EventHandler(this.btnAgregarPersona_Click);
+            // 
+            // btnEliminarPersona
+            // 
+            this.btnEliminarPersona.Location = new System.Drawing.Point(806, 380);
+            this.btnEliminarPersona.Name = "btnEliminarPersona";
+            this.btnEliminarPersona.Size = new System.Drawing.Size(303, 29);
+            this.btnEliminarPersona.TabIndex = 3;
+            this.btnEliminarPersona.Text = "ELIMINAR PERSONA";
+            this.btnEliminarPersona.UseVisualStyleBackColor = true;
+            this.btnEliminarPersona.Click += new System.EventHandler(this.btnEliminarPersona_Click);
+            // 
+            // btnEditarPersona
+            // 
+            this.btnEditarPersona.Location = new System.Drawing.Point(413, 380);
+            this.btnEditarPersona.Name = "btnEditarPersona";
+            this.btnEditarPersona.Size = new System.Drawing.Size(303, 29);
+            this.btnEditarPersona.TabIndex = 4;
+            this.btnEditarPersona.Text = "EDITAR PERSONA";
+            this.btnEditarPersona.UseVisualStyleBackColor = true;
+            this.btnEditarPersona.Click += new System.EventHandler(this.btnEditarPersona_Click);
+            // 
             // FormPersona
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
@@ -180,7 +180,7 @@ namespace TP3
             this.MinimizeBox = false;
             this.Name = "FormPersona";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "FormPersona";
+            this.Text = "Personas";
             this.Load += new System.EventHandler(this.FormPersona_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvPersonas)).EndInit();
             this.ResumeLayout(false);

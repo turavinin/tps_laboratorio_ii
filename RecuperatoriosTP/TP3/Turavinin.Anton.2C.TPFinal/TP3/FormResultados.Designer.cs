@@ -83,9 +83,9 @@ namespace TP3
             this.lblPerfil.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lblPerfil.Location = new System.Drawing.Point(14, 9);
             this.lblPerfil.Name = "lblPerfil";
-            this.lblPerfil.Size = new System.Drawing.Size(277, 41);
+            this.lblPerfil.Size = new System.Drawing.Size(153, 41);
             this.lblPerfil.TabIndex = 0;
-            this.lblPerfil.Text = "PERFIL PERSONAS";
+            this.lblPerfil.Text = "ANÁLISIS";
             // 
             // lblTotalPersonas
             // 
@@ -266,7 +266,7 @@ namespace TP3
             this.grpGenero.Size = new System.Drawing.Size(942, 258);
             this.grpGenero.TabIndex = 20;
             this.grpGenero.TabStop = false;
-            this.grpGenero.Text = "Identidad de Genero";
+            this.grpGenero.Text = "Identidad de Género";
             // 
             // label10
             // 
@@ -530,7 +530,7 @@ namespace TP3
             this.MinimizeBox = false;
             this.Name = "FormResultados";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Perfil Personas";
+            this.Text = "Resultados";
             this.Load += new System.EventHandler(this.FormResultados_Load);
             this.grpGenero.ResumeLayout(false);
             this.grpGenero.PerformLayout();

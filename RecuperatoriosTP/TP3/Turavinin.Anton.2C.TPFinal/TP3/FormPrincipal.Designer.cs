@@ -41,12 +41,12 @@ namespace TP3
             this.lblTitulo.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.lblTitulo.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.lblTitulo.Font = new System.Drawing.Font("Segoe UI Historic", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblTitulo.Location = new System.Drawing.Point(118, 22);
+            this.lblTitulo.Location = new System.Drawing.Point(167, 55);
             this.lblTitulo.Name = "lblTitulo";
             this.lblTitulo.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.lblTitulo.Size = new System.Drawing.Size(426, 84);
+            this.lblTitulo.Size = new System.Drawing.Size(330, 84);
             this.lblTitulo.TabIndex = 0;
-            this.lblTitulo.Text = "ENCUESTA PROGRAMACION\r\n2021";
+            this.lblTitulo.Text = "ENCUESTA SISTEMAS \r\n2021";
             this.lblTitulo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // btnCargaPersona
@@ -98,7 +98,7 @@ namespace TP3
             this.MaximizeBox = false;
             this.Name = "FormPrincipal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Sueldos Programacion";
+            this.Text = "Encuesta Sistemas 2021";
             this.Load += new System.EventHandler(this.FormPrincipal_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
