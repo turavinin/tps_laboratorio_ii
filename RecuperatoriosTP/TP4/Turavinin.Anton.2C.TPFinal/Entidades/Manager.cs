@@ -63,7 +63,11 @@ namespace Entidades
             this.estadisticas = new Estadisticas();
         }
 
-
+        /// <summary>
+        /// Carga la lista con los datos de la base.
+        /// </summary>
+        /// <typeparam name="T"></typeparam>
+        /// <param name="obj"></param>
         public void CargarListaEntidad<T>() where T : class
         {
             switch (this.ObtenerTipo(typeof(T)))
@@ -77,6 +81,12 @@ namespace Entidades
             }
         }
 
+        /// <summary>
+        /// Obtiene la entidad por Id de la base.
+        /// </summary>
+        /// <typeparam name="T"></typeparam>
+        /// <param name="id"></param>
+        /// <returns>Retorna la entidad</returns>
         public T ObtenerEntidadPorId<T>(int id) where T : class
         {
             switch (this.ObtenerTipo(typeof(T)))
@@ -90,6 +100,12 @@ namespace Entidades
             return new Persona() as T;
         }
 
+        /// <summary>
+        /// Guarda entidad en la base.
+        /// </summary>
+        /// <typeparam name="T"></typeparam>
+        /// <param name="obj"></param>
+        /// <returns>Retorna true si se eliminó la entidad.</returns>
         public bool GuardarEntidad<T>(T obj)
         {
             bool entidadGuardada = false;
@@ -106,6 +122,12 @@ namespace Entidades
             return entidadGuardada;
         }
 
+        /// <summary>
+        /// Actualiza entidad en la base.
+        /// </summary>
+        /// <typeparam name="T"></typeparam>
+        /// <param name="obj"></param>
+        /// <returns>Retorna true si se eliminó la entidad.</returns>
         public bool ActualizarEntidad<T>(T obj)
         {
             bool entidadActualizada = false;
@@ -122,6 +144,11 @@ namespace Entidades
             return entidadActualizada;
         }
 
+        /// <summary>
+        /// Elimina entidad de la base.
+        /// </summary>
+        /// <typeparam name="T"></typeparam>
+        /// <param name="id"></param>
         public bool EliminarEntidad<T>(int id)
         {
             bool entidadEliminada = false;
@@ -146,6 +173,12 @@ namespace Entidades
             return entidadEliminada;
         }
 
+        /// <summary>
+        /// Obtiene el Id por nombre / descripcion.
+        /// </summary>
+        /// <typeparam name="T"></typeparam>
+        /// <param name="nombre"></param>
+        /// <returns>Retorna el id.</returns>
         public int ObtenerIdPorNombreEnLista<T>(string nombre)
         {
             switch (this.ObtenerTipo(typeof(T)))
@@ -159,6 +192,12 @@ namespace Entidades
             return 0;
         }
 
+        /// <summary>
+        /// Obtiene el TipoEntidad de T.
+        /// </summary>
+        /// <typeparam name="T"></typeparam>
+        /// <param name="tipo"></param>
+        /// <returns>El TipoEntidad.</returns>
         private TipoEntidad ObtenerTipo(Type tipo)
         {
             if (tipo == typeof(Persona))
@@ -171,6 +210,12 @@ namespace Entidades
             }
         }
 
+        /// <summary>
+        /// Obtiene los enums en forma de lista
+        /// </summary>
+        /// <typeparam name="T"></typeparam>
+        /// <param name="tipo"></param>
+        /// <returns>Enum en lista</returns>
         public List<T> ObtenerListaEnum<T>() where T : struct
         {
             List<T> listaEnums = new List<T>();
@@ -183,13 +228,17 @@ namespace Entidades
         }
 
         /// <summary>
-        /// Método calcula los porcentajes. 
+        /// Método calcula los resultados 
         /// </summary>
         public void CalcularResultados()
         {
             this.CalcularPerfiles();
             this.CalcularRoles();
         }
+
+        /// <summary>
+        /// Método calcula los perfiles de las personas. 
+        /// </summary>
         private void CalcularPerfiles()
         {
             #region Calcula los numeros
@@ -218,6 +267,10 @@ namespace Entidades
             this.estadisticas.PorcentajeMasDe50 = (this.estadisticas.TotalMasDe50 * 100) / this.TotalPersonas;
             #endregion
         }
+
+        /// <summary>
+        /// Método calcula los roles. 
+        /// </summary>
         private void CalcularRoles()
         {
             if(this.TotalPersonas > 0)
