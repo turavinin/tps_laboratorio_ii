@@ -1,0 +1,10 @@
+is_global = true
+build_property.TargetFramework = net5.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 
+build_property.PublishSingleFile = 
+build_property.IncludeAllContentForSelfExtract = 
+build_property._SupportedPlatformList = Android,iOS,Linux,macOS,Windows
+build_property.RootNamespace = Turavinin.Anton._2C.TPFinal
+build_property.ProjectDir = C:\Users\atura\OneDrive\Escritorio\TP4\Turavinin.Anton.2C.TPFinal\Turavinin.Anton.2C.TPFinal\
