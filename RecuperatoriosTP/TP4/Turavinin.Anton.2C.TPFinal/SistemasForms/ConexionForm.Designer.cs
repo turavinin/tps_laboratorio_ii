@@ -37,7 +37,7 @@ namespace SistemasForms
             // 
             // txtConnString
             // 
-            this.txtConnString.Location = new System.Drawing.Point(24, 65);
+            this.txtConnString.Location = new System.Drawing.Point(59, 81);
             this.txtConnString.Name = "txtConnString";
             this.txtConnString.Size = new System.Drawing.Size(325, 27);
             this.txtConnString.TabIndex = 1;
@@ -46,7 +46,7 @@ namespace SistemasForms
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Franklin Gothic Medium Cond", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(24, 37);
+            this.label1.Location = new System.Drawing.Point(59, 53);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(220, 23);
             this.label1.TabIndex = 1;
@@ -55,7 +55,7 @@ namespace SistemasForms
             // btnConnStringAceptar
             // 
             this.btnConnStringAceptar.Font = new System.Drawing.Font("Franklin Gothic Medium Cond", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnConnStringAceptar.Location = new System.Drawing.Point(24, 104);
+            this.btnConnStringAceptar.Location = new System.Drawing.Point(59, 120);
             this.btnConnStringAceptar.Name = "btnConnStringAceptar";
             this.btnConnStringAceptar.Size = new System.Drawing.Size(325, 40);
             this.btnConnStringAceptar.TabIndex = 2;
@@ -66,7 +66,7 @@ namespace SistemasForms
             // btnConnStringCancelar
             // 
             this.btnConnStringCancelar.Font = new System.Drawing.Font("Franklin Gothic Medium Cond", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnConnStringCancelar.Location = new System.Drawing.Point(24, 150);
+            this.btnConnStringCancelar.Location = new System.Drawing.Point(59, 166);
             this.btnConnStringCancelar.Name = "btnConnStringCancelar";
             this.btnConnStringCancelar.Size = new System.Drawing.Size(325, 45);
             this.btnConnStringCancelar.TabIndex = 3;
@@ -78,7 +78,7 @@ namespace SistemasForms
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(377, 207);
+            this.ClientSize = new System.Drawing.Size(455, 267);
             this.ControlBox = false;
             this.Controls.Add(this.btnConnStringCancelar);
             this.Controls.Add(this.btnConnStringAceptar);

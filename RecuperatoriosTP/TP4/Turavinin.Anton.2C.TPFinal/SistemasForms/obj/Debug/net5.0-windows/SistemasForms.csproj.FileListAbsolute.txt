@@ -32,3 +32,37 @@ C:\Users\atura\OneDrive\Escritorio\TP4\Turavinin.Anton.2C.TPFinal\SistemasForms\
 C:\Users\atura\OneDrive\Escritorio\TP4\Turavinin.Anton.2C.TPFinal\SistemasForms\obj\Debug\net5.0-windows\SistemasForms.PersonasForm.resources
 C:\Users\atura\OneDrive\Escritorio\TP4\Turavinin.Anton.2C.TPFinal\SistemasForms\obj\Debug\net5.0-windows\SistemasForms.PersonasOperarForm.resources
 C:\Users\atura\OneDrive\Escritorio\TP4\Turavinin.Anton.2C.TPFinal\SistemasForms\obj\Debug\net5.0-windows\SistemasForms.ResultadosForm.resources
+D:\Docs\ANTON\03 UTN\UTN - 2° CUATRIMESTRE\PROGRRAMACION-2\TRABAJOS-PRACTICOS\RecuperatoriosTP\TP4\Turavinin.Anton.2C.TPFinal\SistemasForms\bin\Debug\net5.0-windows\SistemasForms.exe
+D:\Docs\ANTON\03 UTN\UTN - 2° CUATRIMESTRE\PROGRRAMACION-2\TRABAJOS-PRACTICOS\RecuperatoriosTP\TP4\Turavinin.Anton.2C.TPFinal\SistemasForms\bin\Debug\net5.0-windows\SistemasForms.deps.json
+D:\Docs\ANTON\03 UTN\UTN - 2° CUATRIMESTRE\PROGRRAMACION-2\TRABAJOS-PRACTICOS\RecuperatoriosTP\TP4\Turavinin.Anton.2C.TPFinal\SistemasForms\bin\Debug\net5.0-windows\SistemasForms.runtimeconfig.json
+D:\Docs\ANTON\03 UTN\UTN - 2° CUATRIMESTRE\PROGRRAMACION-2\TRABAJOS-PRACTICOS\RecuperatoriosTP\TP4\Turavinin.Anton.2C.TPFinal\SistemasForms\bin\Debug\net5.0-windows\SistemasForms.runtimeconfig.dev.json
+D:\Docs\ANTON\03 UTN\UTN - 2° CUATRIMESTRE\PROGRRAMACION-2\TRABAJOS-PRACTICOS\RecuperatoriosTP\TP4\Turavinin.Anton.2C.TPFinal\SistemasForms\bin\Debug\net5.0-windows\SistemasForms.dll
+D:\Docs\ANTON\03 UTN\UTN - 2° CUATRIMESTRE\PROGRRAMACION-2\TRABAJOS-PRACTICOS\RecuperatoriosTP\TP4\Turavinin.Anton.2C.TPFinal\SistemasForms\bin\Debug\net5.0-windows\ref\SistemasForms.dll
+D:\Docs\ANTON\03 UTN\UTN - 2° CUATRIMESTRE\PROGRRAMACION-2\TRABAJOS-PRACTICOS\RecuperatoriosTP\TP4\Turavinin.Anton.2C.TPFinal\SistemasForms\bin\Debug\net5.0-windows\SistemasForms.pdb
+D:\Docs\ANTON\03 UTN\UTN - 2° CUATRIMESTRE\PROGRRAMACION-2\TRABAJOS-PRACTICOS\RecuperatoriosTP\TP4\Turavinin.Anton.2C.TPFinal\SistemasForms\bin\Debug\net5.0-windows\System.Data.SqlClient.dll
+D:\Docs\ANTON\03 UTN\UTN - 2° CUATRIMESTRE\PROGRRAMACION-2\TRABAJOS-PRACTICOS\RecuperatoriosTP\TP4\Turavinin.Anton.2C.TPFinal\SistemasForms\bin\Debug\net5.0-windows\runtimes\win-arm64\native\sni.dll
+D:\Docs\ANTON\03 UTN\UTN - 2° CUATRIMESTRE\PROGRRAMACION-2\TRABAJOS-PRACTICOS\RecuperatoriosTP\TP4\Turavinin.Anton.2C.TPFinal\SistemasForms\bin\Debug\net5.0-windows\runtimes\win-x64\native\sni.dll
+D:\Docs\ANTON\03 UTN\UTN - 2° CUATRIMESTRE\PROGRRAMACION-2\TRABAJOS-PRACTICOS\RecuperatoriosTP\TP4\Turavinin.Anton.2C.TPFinal\SistemasForms\bin\Debug\net5.0-windows\runtimes\win-x86\native\sni.dll
+D:\Docs\ANTON\03 UTN\UTN - 2° CUATRIMESTRE\PROGRRAMACION-2\TRABAJOS-PRACTICOS\RecuperatoriosTP\TP4\Turavinin.Anton.2C.TPFinal\SistemasForms\bin\Debug\net5.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+D:\Docs\ANTON\03 UTN\UTN - 2° CUATRIMESTRE\PROGRRAMACION-2\TRABAJOS-PRACTICOS\RecuperatoriosTP\TP4\Turavinin.Anton.2C.TPFinal\SistemasForms\bin\Debug\net5.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+D:\Docs\ANTON\03 UTN\UTN - 2° CUATRIMESTRE\PROGRRAMACION-2\TRABAJOS-PRACTICOS\RecuperatoriosTP\TP4\Turavinin.Anton.2C.TPFinal\SistemasForms\bin\Debug\net5.0-windows\Entidades.dll
+D:\Docs\ANTON\03 UTN\UTN - 2° CUATRIMESTRE\PROGRRAMACION-2\TRABAJOS-PRACTICOS\RecuperatoriosTP\TP4\Turavinin.Anton.2C.TPFinal\SistemasForms\bin\Debug\net5.0-windows\Entidades.pdb
+D:\Docs\ANTON\03 UTN\UTN - 2° CUATRIMESTRE\PROGRRAMACION-2\TRABAJOS-PRACTICOS\RecuperatoriosTP\TP4\Turavinin.Anton.2C.TPFinal\SistemasForms\obj\Debug\net5.0-windows\SistemasForms.csproj.AssemblyReference.cache
+D:\Docs\ANTON\03 UTN\UTN - 2° CUATRIMESTRE\PROGRRAMACION-2\TRABAJOS-PRACTICOS\RecuperatoriosTP\TP4\Turavinin.Anton.2C.TPFinal\SistemasForms\obj\Debug\net5.0-windows\SistemasForms.ConexionForm.resources
+D:\Docs\ANTON\03 UTN\UTN - 2° CUATRIMESTRE\PROGRRAMACION-2\TRABAJOS-PRACTICOS\RecuperatoriosTP\TP4\Turavinin.Anton.2C.TPFinal\SistemasForms\obj\Debug\net5.0-windows\SistemasForms.PersonasForm.resources
+D:\Docs\ANTON\03 UTN\UTN - 2° CUATRIMESTRE\PROGRRAMACION-2\TRABAJOS-PRACTICOS\RecuperatoriosTP\TP4\Turavinin.Anton.2C.TPFinal\SistemasForms\obj\Debug\net5.0-windows\SistemasForms.PersonasOperarForm.resources
+D:\Docs\ANTON\03 UTN\UTN - 2° CUATRIMESTRE\PROGRRAMACION-2\TRABAJOS-PRACTICOS\RecuperatoriosTP\TP4\Turavinin.Anton.2C.TPFinal\SistemasForms\obj\Debug\net5.0-windows\SistemasForms.PrincipalForm.resources
+D:\Docs\ANTON\03 UTN\UTN - 2° CUATRIMESTRE\PROGRRAMACION-2\TRABAJOS-PRACTICOS\RecuperatoriosTP\TP4\Turavinin.Anton.2C.TPFinal\SistemasForms\obj\Debug\net5.0-windows\SistemasForms.Properties.Resources.resources
+D:\Docs\ANTON\03 UTN\UTN - 2° CUATRIMESTRE\PROGRRAMACION-2\TRABAJOS-PRACTICOS\RecuperatoriosTP\TP4\Turavinin.Anton.2C.TPFinal\SistemasForms\obj\Debug\net5.0-windows\SistemasForms.ResultadosForm.resources
+D:\Docs\ANTON\03 UTN\UTN - 2° CUATRIMESTRE\PROGRRAMACION-2\TRABAJOS-PRACTICOS\RecuperatoriosTP\TP4\Turavinin.Anton.2C.TPFinal\SistemasForms\obj\Debug\net5.0-windows\SistemasForms.RolesForm.resources
+D:\Docs\ANTON\03 UTN\UTN - 2° CUATRIMESTRE\PROGRRAMACION-2\TRABAJOS-PRACTICOS\RecuperatoriosTP\TP4\Turavinin.Anton.2C.TPFinal\SistemasForms\obj\Debug\net5.0-windows\SistemasForms.RolesOperarForm.resources
+D:\Docs\ANTON\03 UTN\UTN - 2° CUATRIMESTRE\PROGRRAMACION-2\TRABAJOS-PRACTICOS\RecuperatoriosTP\TP4\Turavinin.Anton.2C.TPFinal\SistemasForms\obj\Debug\net5.0-windows\SistemasForms.csproj.GenerateResource.cache
+D:\Docs\ANTON\03 UTN\UTN - 2° CUATRIMESTRE\PROGRRAMACION-2\TRABAJOS-PRACTICOS\RecuperatoriosTP\TP4\Turavinin.Anton.2C.TPFinal\SistemasForms\obj\Debug\net5.0-windows\SistemasForms.GeneratedMSBuildEditorConfig.editorconfig
+D:\Docs\ANTON\03 UTN\UTN - 2° CUATRIMESTRE\PROGRRAMACION-2\TRABAJOS-PRACTICOS\RecuperatoriosTP\TP4\Turavinin.Anton.2C.TPFinal\SistemasForms\obj\Debug\net5.0-windows\SistemasForms.AssemblyInfoInputs.cache
+D:\Docs\ANTON\03 UTN\UTN - 2° CUATRIMESTRE\PROGRRAMACION-2\TRABAJOS-PRACTICOS\RecuperatoriosTP\TP4\Turavinin.Anton.2C.TPFinal\SistemasForms\obj\Debug\net5.0-windows\SistemasForms.AssemblyInfo.cs
+D:\Docs\ANTON\03 UTN\UTN - 2° CUATRIMESTRE\PROGRRAMACION-2\TRABAJOS-PRACTICOS\RecuperatoriosTP\TP4\Turavinin.Anton.2C.TPFinal\SistemasForms\obj\Debug\net5.0-windows\SistemasForms.csproj.CoreCompileInputs.cache
+D:\Docs\ANTON\03 UTN\UTN - 2° CUATRIMESTRE\PROGRRAMACION-2\TRABAJOS-PRACTICOS\RecuperatoriosTP\TP4\Turavinin.Anton.2C.TPFinal\SistemasForms\obj\Debug\net5.0-windows\SistemasForms.csproj.CopyComplete
+D:\Docs\ANTON\03 UTN\UTN - 2° CUATRIMESTRE\PROGRRAMACION-2\TRABAJOS-PRACTICOS\RecuperatoriosTP\TP4\Turavinin.Anton.2C.TPFinal\SistemasForms\obj\Debug\net5.0-windows\SistemasForms.dll
+D:\Docs\ANTON\03 UTN\UTN - 2° CUATRIMESTRE\PROGRRAMACION-2\TRABAJOS-PRACTICOS\RecuperatoriosTP\TP4\Turavinin.Anton.2C.TPFinal\SistemasForms\obj\Debug\net5.0-windows\ref\SistemasForms.dll
+D:\Docs\ANTON\03 UTN\UTN - 2° CUATRIMESTRE\PROGRRAMACION-2\TRABAJOS-PRACTICOS\RecuperatoriosTP\TP4\Turavinin.Anton.2C.TPFinal\SistemasForms\obj\Debug\net5.0-windows\SistemasForms.pdb
+D:\Docs\ANTON\03 UTN\UTN - 2° CUATRIMESTRE\PROGRRAMACION-2\TRABAJOS-PRACTICOS\RecuperatoriosTP\TP4\Turavinin.Anton.2C.TPFinal\SistemasForms\obj\Debug\net5.0-windows\SistemasForms.genruntimeconfig.cache

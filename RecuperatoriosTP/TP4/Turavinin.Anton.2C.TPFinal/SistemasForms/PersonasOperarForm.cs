@@ -61,9 +61,9 @@ namespace SistemasForms
                     {
                         this.manager.GuardarEntidad<Persona>(this.CrearPersona());
                     }
-                }
 
-                this.Close();
+                    this.Close();
+                }
             }
             catch (Exception ex)
             {
