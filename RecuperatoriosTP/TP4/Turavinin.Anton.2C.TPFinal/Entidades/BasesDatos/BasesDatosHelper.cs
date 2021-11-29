@@ -51,6 +51,10 @@ namespace Entidades.BasesDatos
             }
         }
 
+        /// <summary>
+        /// Prueba la conexión a la base
+        /// </summary>
+        /// <returns>Retorna true si la conexión fue lograda.</returns>
         public bool ConexionLograda()
         {
             var output = true;
@@ -82,6 +86,12 @@ namespace Entidades.BasesDatos
             return output;
         }
 
+        /// <summary>
+        /// Ejecuta una query con los parametros opcionales.
+        /// </summary>
+        /// <param name="query"></param>
+        /// <param name="parametros"></param>
+        /// <returns>Retorna true si la query fue ejecutada correctamente.</returns>
         public static bool EjecutarQuery(string query, Dictionary<string, object> parametros = null)
         {
             try
@@ -108,6 +118,10 @@ namespace Entidades.BasesDatos
             }
         }
 
+        /// <summary>
+        /// Importa las personas de la base.
+        /// </summary>
+        /// <returns>Retorna una lista de personas</returns>
         public static List<Persona> ImportarPersonas()
         {
             try
@@ -141,6 +155,10 @@ namespace Entidades.BasesDatos
             }
         }
 
+        /// <summary>
+        /// Importa los roles de la base.
+        /// </summary>
+        /// <returns>Retorna una lista de roles</returns>
         public static List<Roles> ImportarRoles()
         {
             try
@@ -170,6 +188,11 @@ namespace Entidades.BasesDatos
             }
         }
 
+        /// <summary>
+        /// Importa una persona de la base por Id.
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns>Retorna a la persona</returns>
         public static Persona ImportarPersonaPorId(int id)
         {
             try
@@ -201,6 +224,11 @@ namespace Entidades.BasesDatos
             }
         }
 
+        /// <summary>
+        /// Importa un rol de la base por Id.
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns>Retorna al rol</returns>
         public static Roles ImportarRolPorId(int id)
         {
             try
