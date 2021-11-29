@@ -1,0 +1,10 @@
+is_global = true
+build_property.TargetFramework = net5.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 
+build_property.PublishSingleFile = 
+build_property.IncludeAllContentForSelfExtract = 
+build_property._SupportedPlatformList = Android,iOS,Linux,macOS,Windows
+build_property.RootNamespace = Entidades
+build_property.ProjectDir = D:\Docs\ANTON\03 UTN\UTN - 2° CUATRIMESTRE\PROGRRAMACION-2\TRABAJOS-PRACTICOS\RecuperatoriosTP\TP4\Turavinin.Anton.2C.TPFinal\Entidades\
