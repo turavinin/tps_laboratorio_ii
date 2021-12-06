@@ -1,6 +1,6 @@
 USE [master]
 GO
-/****** Object:  Database [TP4]    Script Date: 28/11/2021 21:26:06 ******/
+/****** Object:  Database [TP4]    Script Date: 6/12/2021 09:42:00 ******/
 CREATE DATABASE [TP4]
  CONTAINMENT = NONE
  ON  PRIMARY 
@@ -82,7 +82,7 @@ ALTER DATABASE [TP4] SET QUERY_STORE = OFF
 GO
 USE [TP4]
 GO
-/****** Object:  Table [dbo].[Personas]    Script Date: 28/11/2021 21:26:06 ******/
+/****** Object:  Table [dbo].[Personas]    Script Date: 6/12/2021 09:42:01 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -97,7 +97,7 @@ CREATE TABLE [dbo].[Personas](
 	[Salario] [money] NOT NULL
 ) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[Roles]    Script Date: 28/11/2021 21:26:06 ******/
+/****** Object:  Table [dbo].[Roles]    Script Date: 6/12/2021 09:42:01 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -107,7 +107,46 @@ CREATE TABLE [dbo].[Roles](
 	[Descripcion] [nvarchar](200) NOT NULL
 ) ON [PRIMARY]
 GO
+SET IDENTITY_INSERT [dbo].[Personas] ON 
+GO
+INSERT [dbo].[Personas] ([Id], [Nombre], [Edad], [Genero], [RolId], [Experiencia], [Salario]) VALUES (1, N'Juan Molina Dos', 25, N'HombreCis', 2, N'Junior', 95000.0000)
+GO
+INSERT [dbo].[Personas] ([Id], [Nombre], [Edad], [Genero], [RolId], [Experiencia], [Salario]) VALUES (2, N'Andres Parra', 43, N'NoBinarie', 3, N'SemiSenior', 150000.0000)
+GO
+INSERT [dbo].[Personas] ([Id], [Nombre], [Edad], [Genero], [RolId], [Experiencia], [Salario]) VALUES (5, N'Juliana Disanti', 29, N'MujerCis', 3, N'Junior', 90000.0000)
+GO
+INSERT [dbo].[Personas] ([Id], [Nombre], [Edad], [Genero], [RolId], [Experiencia], [Salario]) VALUES (6, N'Marcos Sequeira', 22, N'Agenero', 1, N'Junior', 90000.0000)
+GO
+INSERT [dbo].[Personas] ([Id], [Nombre], [Edad], [Genero], [RolId], [Experiencia], [Salario]) VALUES (7, N'Maria Sierra', 35, N'MujerCis', 5, N'Senior', 300000.0000)
+GO
+INSERT [dbo].[Personas] ([Id], [Nombre], [Edad], [Genero], [RolId], [Experiencia], [Salario]) VALUES (9, N'Andrea Lopez', 34, N'MujerCis', 3, N'SemiSenior', 180000.0000)
+GO
+INSERT [dbo].[Personas] ([Id], [Nombre], [Edad], [Genero], [RolId], [Experiencia], [Salario]) VALUES (10, N'Roberta Marquez', 31, N'HombreTrans', 6, N'SemiSenior', 175000.0000)
+GO
+SET IDENTITY_INSERT [dbo].[Personas] OFF
+GO
+SET IDENTITY_INSERT [dbo].[Roles] ON 
+GO
+INSERT [dbo].[Roles] ([Id], [Descripcion]) VALUES (1, N'Web Developer (Backend)')
+GO
+INSERT [dbo].[Roles] ([Id], [Descripcion]) VALUES (2, N'Web Developer (Frontend)')
+GO
+INSERT [dbo].[Roles] ([Id], [Descripcion]) VALUES (3, N'QA/Tester')
+GO
+INSERT [dbo].[Roles] ([Id], [Descripcion]) VALUES (4, N'DevOps')
+GO
+INSERT [dbo].[Roles] ([Id], [Descripcion]) VALUES (5, N'Manager/Director')
+GO
+INSERT [dbo].[Roles] ([Id], [Descripcion]) VALUES (6, N'Project Manager')
+GO
+INSERT [dbo].[Roles] ([Id], [Descripcion]) VALUES (7, N'Data Analyst')
+GO
+INSERT [dbo].[Roles] ([Id], [Descripcion]) VALUES (8, N'Consultant')
+GO
+SET IDENTITY_INSERT [dbo].[Roles] OFF
+GO
 USE [master]
 GO
 ALTER DATABASE [TP4] SET  READ_WRITE 
 GO
+
