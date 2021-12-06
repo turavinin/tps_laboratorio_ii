@@ -117,7 +117,6 @@ namespace Entidades
                     break;
                 case TipoEntidad.Roles:
                     BasesDatosHelper.EjecutarQuery(Roles.QueryGuardar(), Roles.Parametros(obj as Roles));
-                    JsonHelper<T>.Exportar(obj, "roles.json");
                     break;
             }
         }
@@ -134,11 +133,9 @@ namespace Entidades
             {
                 case TipoEntidad.Persona:
                     BasesDatosHelper.EjecutarQuery(Persona.QueryActualizar(), Persona.Parametros(obj as Persona));
-                    JsonHelper<T>.Exportar(obj, "personas.json");
                     break;
                 case TipoEntidad.Roles:
                     BasesDatosHelper.EjecutarQuery(Roles.QueryActualizar(), Roles.Parametros(obj as Roles));
-                    JsonHelper<T>.Exportar(obj, "roles.json");
                     break;
             }
         }
