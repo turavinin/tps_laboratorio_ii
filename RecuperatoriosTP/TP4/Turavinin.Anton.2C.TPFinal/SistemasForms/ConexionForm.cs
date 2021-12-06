@@ -25,17 +25,17 @@ namespace SistemasForms
 
         private void btnConnStringAceptar_Click(object sender, EventArgs e)
         {
-            string connString = this.txtConnString.Text;
+            string server = this.txtConnString.Text;
 
-            if (string.IsNullOrWhiteSpace(connString))
+            if (string.IsNullOrWhiteSpace(server))
             {
-                MessagesHelper.MostrarError("Debe ingresar un connection string.");
+                MessagesHelper.MostrarError("Debe ingresar un servidor.");
             }
             else
             {
                 try
                 {
-                    BasesDatosHelper.ConnectionString = connString;
+                    BasesDatosHelper.ConnectionString = server;
 
                     if (this.basesDatos.ConexionLograda())
                     {
@@ -44,7 +44,7 @@ namespace SistemasForms
                     }
                     else
                     {
-                        MessagesHelper.MostrarError("No fue posible realizar la conexión. Revise el connection string.");
+                        MessagesHelper.MostrarError("No fue posible realizar la conexión. Revise el servidor.");
                     }
 
                 }

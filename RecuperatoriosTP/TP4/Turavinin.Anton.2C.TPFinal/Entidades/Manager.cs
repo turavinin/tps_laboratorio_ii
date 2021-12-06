@@ -1,4 +1,5 @@
-﻿using Entidades.BasesDatos;
+﻿using Entidades.Archivos;
+using Entidades.BasesDatos;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -106,20 +107,19 @@ namespace Entidades
         /// <typeparam name="T"></typeparam>
         /// <param name="obj"></param>
         /// <returns>Retorna true si se eliminó la entidad.</returns>
-        public bool GuardarEntidad<T>(T obj)
+        public void GuardarEntidad<T>(T obj)
         {
-            bool entidadGuardada = false;
             switch (this.ObtenerTipo(typeof(T)))
             {
                 case TipoEntidad.Persona:
-                    entidadGuardada = BasesDatosHelper.EjecutarQuery(Persona.QueryGuardar(), Persona.Parametros(obj as Persona));
+                    BasesDatosHelper.EjecutarQuery(Persona.QueryGuardar(), Persona.Parametros(obj as Persona));
+                    
                     break;
                 case TipoEntidad.Roles:
-                    entidadGuardada = BasesDatosHelper.EjecutarQuery(Roles.QueryGuardar(), Roles.Parametros(obj as Roles));
+                    BasesDatosHelper.EjecutarQuery(Roles.QueryGuardar(), Roles.Parametros(obj as Roles));
+                    JsonHelper<T>.Exportar(obj, "roles.json");
                     break;
             }
-
-            return entidadGuardada;
         }
 
         /// <summary>
@@ -128,20 +128,19 @@ namespace Entidades
         /// <typeparam name="T"></typeparam>
         /// <param name="obj"></param>
         /// <returns>Retorna true si se eliminó la entidad.</returns>
-        public bool ActualizarEntidad<T>(T obj)
+        public void ActualizarEntidad<T>(T obj)
         {
-            bool entidadActualizada = false;
             switch (this.ObtenerTipo(typeof(T)))
             {
                 case TipoEntidad.Persona:
-                    entidadActualizada = BasesDatosHelper.EjecutarQuery(Persona.QueryActualizar(), Persona.Parametros(obj as Persona));
+                    BasesDatosHelper.EjecutarQuery(Persona.QueryActualizar(), Persona.Parametros(obj as Persona));
+                    JsonHelper<T>.Exportar(obj, "personas.json");
                     break;
                 case TipoEntidad.Roles:
-                    entidadActualizada = BasesDatosHelper.EjecutarQuery(Roles.QueryActualizar(), Roles.Parametros(obj as Roles));
+                    BasesDatosHelper.EjecutarQuery(Roles.QueryActualizar(), Roles.Parametros(obj as Roles));
+                    JsonHelper<T>.Exportar(obj, "roles.json");
                     break;
             }
-
-            return entidadActualizada;
         }
 
         /// <summary>
@@ -255,16 +254,16 @@ namespace Entidades
             #endregion
 
             #region Calcula los porcentajes
-            this.estadisticas.PorcentajeHombresCis = (this.estadisticas.TotalHombresCis * 100) / this.TotalPersonas;
-            this.estadisticas.PorcentajeMujeresCis = (this.estadisticas.TotalMujeresCis * 100) / this.TotalPersonas;
-            this.estadisticas.PorcentajeNoBinarie = (this.estadisticas.TotalNoBinarie * 100) / this.TotalPersonas;
-            this.estadisticas.PorcentajeHombresTrans = (this.estadisticas.TotalHombresTrans * 100) / this.TotalPersonas;
-            this.estadisticas.PorcentajeMujeresTrans = (this.estadisticas.TotalMujeresTrans * 100) / this.TotalPersonas;
-            this.estadisticas.PorcentajeAgenero = (this.estadisticas.TotalAgenero * 100) / this.TotalPersonas;
-            this.estadisticas.PorcentajeEntre20y30 = (this.estadisticas.TotalEntre20y30 * 100) / this.TotalPersonas;
-            this.estadisticas.PorcentajeEntre30y40 = (this.estadisticas.TotalEntre30y40 * 100) / this.TotalPersonas;
-            this.estadisticas.PorcentajeEntre40y50 = (this.estadisticas.TotalEntre40y50 * 100) / this.TotalPersonas;
-            this.estadisticas.PorcentajeMasDe50 = (this.estadisticas.TotalMasDe50 * 100) / this.TotalPersonas;
+            this.estadisticas.PorcentajeHombresCis = this.estadisticas.TotalHombresCis.CalcularPorcentaje(this.TotalPersonas);
+            this.estadisticas.PorcentajeMujeresCis = this.estadisticas.TotalMujeresCis.CalcularPorcentaje(this.TotalPersonas);
+            this.estadisticas.PorcentajeNoBinarie = this.estadisticas.TotalNoBinarie.CalcularPorcentaje(this.TotalPersonas);
+            this.estadisticas.PorcentajeHombresTrans = this.estadisticas.TotalHombresTrans.CalcularPorcentaje(this.TotalPersonas);
+            this.estadisticas.PorcentajeMujeresTrans = this.estadisticas.TotalMujeresTrans.CalcularPorcentaje(this.TotalPersonas);
+            this.estadisticas.PorcentajeAgenero = this.estadisticas.TotalAgenero.CalcularPorcentaje(this.TotalPersonas);
+            this.estadisticas.PorcentajeEntre20y30 = this.estadisticas.TotalEntre20y30.CalcularPorcentaje(this.TotalPersonas);
+            this.estadisticas.PorcentajeEntre30y40 = this.estadisticas.TotalEntre30y40.CalcularPorcentaje(this.TotalPersonas);
+            this.estadisticas.PorcentajeEntre40y50 = this.estadisticas.TotalEntre40y50.CalcularPorcentaje(this.TotalPersonas);
+            this.estadisticas.PorcentajeMasDe50 = this.estadisticas.TotalMasDe50.CalcularPorcentaje(this.TotalPersonas);
             #endregion
         }
 

@@ -1,4 +1,5 @@
 ﻿using Entidades;
+using Entidades.Archivos;
 using Entidades.BasesDatos;
 using SistemasForms.ErrorMessages;
 using System;
@@ -88,11 +89,13 @@ namespace SistemasForms
                 if (BasesDatosHelper.conexionLograda)
                 {
                     this.manager.CargarListaEntidad<Persona>();
+                }
+
+                if (this.manager.ListaPersonas.Count > 0)
+                {
                     this.dgvPersonas.Rows.Clear();
-                    if (this.manager.ListaPersonas.Count > 0)
-                    {
-                        this.manager.ListaPersonas.ForEach(x => this.CargarPersonaALista(x));
-                    }
+                    this.manager.ListaPersonas.ForEach(x => this.CargarPersonaALista(x));
+                    Task guardarArchivos = Task.Run(() => JsonHelper<List<Persona>>.Exportar(this.manager.ListaPersonas, "personas.json"));
                 }
             }
             catch (Exception ex)

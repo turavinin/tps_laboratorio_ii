@@ -51,15 +51,14 @@ namespace SistemasForms
             }
             else
             {
-                bool exitoOperacion = false;
                 if (this.rol is not null)
                 {
                     this.rol.Descripcion = this.txtDescRol.Text;
-                    exitoOperacion = this.manager.ActualizarEntidad(this.rol);
+                    this.manager.ActualizarEntidad(this.rol);
                 }
                 else
                 {
-                    exitoOperacion = this.manager.GuardarEntidad(new Roles(this.txtDescRol.Text));
+                    this.manager.GuardarEntidad(new Roles(this.txtDescRol.Text));
                 }
 
                 this.Close();

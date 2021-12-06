@@ -48,9 +48,9 @@ namespace SistemasForms
             this.label1.Font = new System.Drawing.Font("Franklin Gothic Medium Cond", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label1.Location = new System.Drawing.Point(59, 53);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(220, 23);
+            this.label1.Size = new System.Drawing.Size(152, 23);
             this.label1.TabIndex = 1;
-            this.label1.Text = "Ingrese el connection string:";
+            this.label1.Text = "Ingrese el servidor:";
             // 
             // btnConnStringAceptar
             // 

@@ -28,7 +28,7 @@ namespace Entidades.BasesDatos
             {
                 if (!string.IsNullOrEmpty(value))
                 {
-                    BasesDatosHelper.connString = value;
+                    BasesDatosHelper.connString = $"Server = {value}; Database=TP4;Trusted_Connection=True;"; ;
                 }
             }
         }
@@ -36,18 +36,18 @@ namespace Entidades.BasesDatos
         static BasesDatosHelper()
         {
             BasesDatosHelper.conexionLograda = false;
-            BasesDatosHelper.connString = string.Empty;
+            BasesDatosHelper.connString = $"Server = DESKTOP-GRO5P3H; Database=TP4;Trusted_Connection=True;";
         }
 
         public BasesDatosHelper() : this(string.Empty)
         {
         }
 
-        public BasesDatosHelper(string connString)
+        public BasesDatosHelper(string server)
         {
-            if (!string.IsNullOrEmpty(connString))
+            if (!string.IsNullOrEmpty(server))
             {
-                BasesDatosHelper.connString = connString;
+                BasesDatosHelper.connString = $"Server = ${server}; Database=TP4;Trusted_Connection=True;";
             }
         }
 

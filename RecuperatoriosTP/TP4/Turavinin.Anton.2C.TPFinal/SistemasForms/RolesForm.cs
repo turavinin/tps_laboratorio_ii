@@ -1,4 +1,5 @@
 ﻿using Entidades;
+using Entidades.Archivos;
 using Entidades.BasesDatos;
 using SistemasForms.ErrorMessages;
 using System;
@@ -92,13 +93,13 @@ namespace SistemasForms
             if (BasesDatosHelper.conexionLograda)
             {
                 this.manager.CargarListaEntidad<Roles>();
+            }
+
+            if (this.manager.ListaRoles.Count > 0)
+            {
                 this.dgvListaRoles.Rows.Clear();
-                if (this.manager.ListaRoles.Count > 0)
-                {
-                    this.manager.ListaRoles.ForEach(x => this.dgvListaRoles.Rows.Add(x.Id, x.Descripcion));
-                }
-
-
+                this.manager.ListaRoles.ForEach(x => this.dgvListaRoles.Rows.Add(x.Id, x.Descripcion));
+                Task guardarArchivos = Task.Run(() => JsonHelper<List<Roles>>.Exportar(this.manager.ListaRoles, "roles.json"));
             }
         }
 
